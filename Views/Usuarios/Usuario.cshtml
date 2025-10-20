@@ -1,0 +1,29 @@
+﻿@model ProyectoWeb.Models.MdUsuarios
+@{
+    ViewData["Title"] = "Usuario";  
+}
+
+<div class="text-center">
+    <form method="post" action="/Usuarios/Usuario">
+        
+        <label>Nombre</label>
+        <input class="col-sm-4" type="text" name="nombre">
+
+        <label>Fecha Nacimiento</label>
+        <input class="form-control-sm" type="date" name="fecha">
+        
+            <label for="sexo">Elige tu Genero:</label>
+        <select class="form-control-sm" id="sexo" name="sexo">
+                <option value="S">Seleccione</option>
+                <option value="F">Femenino</option>
+                <option value="M">Masculino</option>
+
+            </select>
+        
+        <br />
+        <div class="text-center" ; style="padding:20px">
+            <input type="submit" value="Crear" id="btn_crear" class="btn-info">            
+        </div>
+    </form>   
+</div>
+
